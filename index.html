@@ -3,29 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chris McIntyre - Chaos Lab</title>
+    <title>Chris McIntyre - About Me</title>
     <style>
-        body { font-family: 'Courier New', Courier, monospace; margin: 20px; background-color: #f0f0f0; }
-        header { text-align: center; padding: 20px; background-color: #2c3e50; color: #ecf0f1; border-bottom: 3px solid #e74c3c; }
-        nav { margin: 15px 0; text-align: center; }
-        nav a { margin: 0 15px; text-decoration: none; color: #e74c3c; font-weight: bold; transition: color 0.3s; }
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            margin: 20px;
+            background-color: #f0f0f0;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            border-bottom: 3px solid #e74c3c;
+        }
+        nav {
+            margin: 15px 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #e74c3c;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
         nav a:hover { color: #c0392b; }
-        section { max-width: 800px; margin: 0 auto; padding: 20px; background-color: #fff; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h2 { border-bottom: 2px solid #e74c3c; padding-bottom: 5px; }
+        ul { padding-left: 20px; }
+        a.button {
+            display: inline-block;
+            margin: 10px 10px 0 0;
+            padding: 8px 15px;
+            background-color: #e74c3c;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        a.button:hover { background-color: #c0392b; }
+        @media (max-width: 600px) {
+            body { margin: 10px; }
+            section { padding: 10px; }
+            nav a { display: block; margin: 5px 0; }
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Chris McIntyre</h1>
-        <p>Network Administrator & IT Enthusiast</p>
+        <p>Network Administrator | IT Professional | Lifelong Learner</p>
     </header>
+
     <nav>
         <a href="index.html">Home</a>
         <a href="resume.html">Resume</a>
         <a href="portfolio.html">Portfolio</a>
     </nav>
-    <section id="summary">
+
+    <section id="about-me">
         <h2>About Me</h2>
-        <p>I am a collaborative and driven Network Administrator who excels at building team momentum and delivering practical, scalable solutions. With experience managing enterprise-level IT infrastructure, network security, and system administration across multi-site environments, I bring a proven ability to diagnose issues and deploy fixes rapidly and effectively. Proficient in Palo Alto firewalls and Cisco IOS, I continuously expand my skill set through hands-on experimentation in my home Cisco lab and through earning my CCNA certification. I thrive when faced with complex challenges—and enjoy working with others to turn them into successes. Dive into my resume and portfolio to see how I deliver results.</p>
+        <p>I’m a proactive IT professional and network administrator with hands-on experience in multi-site networking, endpoint management, and system administration. I thrive in collaborative environments, tackling challenges head-on, and building solutions from the ground up. Whether it’s configuring firewalls, designing home labs, or troubleshooting complex issues, I bring a team-first mindset and a results-driven approach to every project. I’m a quick learner, continuously expanding my skillset, and I enjoy turning complex problems into efficient, practical solutions.</p>
     </section>
+
+    <section id="key-skills">
+        <h2>Key Skills</h2>
+        <ul>
+            <li>Network Administration (Switching, Routing, VLANs, Wi-Fi 6)</li>
+            <li>Firewall & Security Management (Palo Alto, ACLs, VPNs)</li>
+            <li>Endpoint & Identity Management (Active Directory, MFA, SSO)</li>
+            <li>Cloud & Virtualization (AWS, Azure, VMware, Hyper-V)</li>
+            <li>Strong troubleshooting and problem-solving mindset</li>
+        </ul>
+    </section>
+
+    <section id="personal-touch">
+        <h2>Personal Interests</h2>
+        <p>Outside of work, I am deeply committed to my family — a wonderful wife and three amazing kids. I’m also a passionate sports fan, following the Dallas Cowboys, Texas Longhorns, and Houston Astros closely. Beyond that, I love engaging in personal projects: building VMs, tweaking and researching network upgrades, and pursuing continuous learning to expand my technical abilities.</p>
+    </section>
+
+    <section id="cta">
+    <h2>Explore More</h2>
+    <p>
+        Download my <a href="resume.pdf" class="button" target="_blank">Resume (PDF)</a> or my <a href="portfolio.pdf" class="button" target="_blank">Portfolio (PDF)</a> to view my work in detail.
+    </p>
+</section>
 </body>
-</html> 
+</html>
